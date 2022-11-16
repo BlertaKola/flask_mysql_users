@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User</title>
+    <style>
+        .container{
+            width: 40%;
+            height: auto;
+            margin-left: 2%;
+            border: 1px solid black;
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+    <h2 style="margin-left: 5%;">User {{users.first_name}}</h2>
+    <div class="card" style="width: 30%;">
+        <div class="card-body">
+            <p class="card-text">Full Name: {{users.first_name}} {{users.last_name}}</p>
+            <p class="card-text">Email: {{users.email}}</p>
+            <p class="card-text">Created On: {{users.created_at}}</p>
+            <p class="card-text">Last Updated On: {{users.updated_at}}</p>
+            <a href="/" class="btn btn-primary">Home</a>
+            <a href="/edit/{{users.id}}" class="btn btn-success">Edit</a>
+            <a href="/deleteUser/{{users.id}}" class="btn btn-danger">Delete</a>
+        </div>
+    </div>
+
+
+
+
+
+    
+    
+    
+</body>
+</html>
